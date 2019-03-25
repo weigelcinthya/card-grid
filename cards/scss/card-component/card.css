@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.card {
+  position: relative;
+  border-radius: 8px;
+  background: 
+  url("./assets/img/Venice.jpg");  
+}
+
+.card__subtitle {	
+  color: #FFFFFF;	
+  font-family: "Open Sans";	
+  font-size: 14px;	
+  letter-spacing: 2.33px;	
+  line-height: 19px;	
+  top: 40%;
+  left: 50%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+}
+
+.card__title {
+    color: #FFFFFF;	
+    font-family: "Open Sans";	
+    font-size: 28px;	
+    font-weight: bold;	
+    line-height: 32px;	
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+}

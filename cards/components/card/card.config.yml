@@ -1,0 +1,8 @@
+title: Card component
+preview: '@preview'
+context:
+    image: ''
+    subtitle: 'This is a subtitle'
+    title: 'This is a title'
+    description: 'This is a description'
+    background-url: ''

@@ -1,0 +1,11 @@
+{
+  "name": "cards",
+  "version": "0.1.0",
+  "dependencies": {
+    "@frctl/fractal": "^1.1.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1"
+  }
+}
