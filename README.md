@@ -2,7 +2,7 @@
 
 This project was build using Fractal and it requires Node.js v4.4.7 or superior to run. 
 
-#Installing 
+##Installing 
 
 Clone this repository and run the following command: 
 
