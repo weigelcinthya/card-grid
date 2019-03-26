@@ -1,5 +1,5 @@
 {{#each info}}
-<div class="card card--overlay" style="background-image: url('{{ path this.image }}')">
+<div class="card" style="background-image: url('{{ path this.image }}')">
     <p class="card__subtitle">{{ this.subtitle }}</p>
     <p class="card__title" style="visibility: {{this.title-visibility}}">{{ this.title }}</p>
     <img class="card__image" src="{{ path '/images/logo.png'}}" style="visibility: {{this.visibility}}"></img>
