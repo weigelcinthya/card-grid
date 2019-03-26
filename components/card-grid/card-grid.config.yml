@@ -11,7 +11,7 @@ context:
       image: "/images/Venice.jpg"
       visibility: hidden
       title-visibility: visible
-      description: ""
+      description: "" 
     - title: BERLIN
       subtitle: GERMANY
       image: "/images/Berlin.jpg"
