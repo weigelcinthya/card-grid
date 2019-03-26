@@ -4,8 +4,8 @@ This project was build using Fractal and it requires Node.js v4.4.7 or superior 
 
 # Requirements
 
-  - https://www.npmjs.com/
-  - https://gulpjs.com/
+  - NPM: https://www.npmjs.com/
+  - Gulp: https://gulpjs.com/
 
 # Installing 
 
