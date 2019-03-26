@@ -1,8 +1,49 @@
-title: Card component
-preview: '@preview'
 context:
-    image: ''
-    subtitle: 'This is a subtitle'
-    title: 'This is a title'
-    description: 'This is a description'
-    background-url: ''
+    info:
+    - title: Valtech_
+      subtitle: FRONT-END
+      image: "/images/Lagoa.jpg"
+      visibility: visible
+      title-visibility: hidden
+      description: Lorem ipsun dolor sit a met lorem dolor sit a met factius lorem ipsun dolor sit a met ipsun lorem amet
+    - title: VENICE
+      subtitle: ITALY
+      image: "/images/Venice.jpg"
+      visibility: hidden
+      title-visibility: visible
+      description: ""
+    - title: BERLIN
+      subtitle: GERMANY
+      image: "/images/Berlin.jpg"
+      visibility: hidden
+      title-visibility: visible
+      description: ""
+    - title: BARCELONA
+      subtitle: SPAIN
+      image: "/images/Barcelona.jpg"
+      visibility: hidden
+      title-visibility: visible
+      description: ""
+    - title: PARIS
+      subtitle: FRANCE
+      image: "/images/Paris.jpg"
+      visibility: hidden
+      title-visibility: visible
+      description: ""
+    - title: AMSTERDAM
+      subtitle: NETHERLANDS
+      image: "/images/Amsterdam.jpg"
+      title-visibility: visible
+      visibility: hidden
+      description: ""
+    - title: LONDON
+      subtitle: UNITED KINGDOM
+      image: "/images/London.jpg"
+      title-visibility: visible
+      visibility: hidden
+      description: ""
+        
+        
+       
+        
+        

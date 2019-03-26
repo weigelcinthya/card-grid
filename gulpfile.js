@@ -1,6 +1,11 @@
 var gulp = require('gulp');
+const sass = require("gulp-sass");
+const rename = require("gulp-rename");
+const sassGlob = require("gulp-sass-glob");
+const fractal = require("./fractal.js");
+const logger = fractal.cli.console;
+const cleanCSS = require("gulp-clean-css");
 
-const fractal = require('@frctl/fractal').create();
 
 fractal.set('project.title', 'Grid Card Component'); // title for the project
 fractal.web.set('builder.dest', 'build'); // destination for the static export
@@ -8,7 +13,6 @@ fractal.docs.set('path', `${__dirname}/docs`); // location of the documentation 
 fractal.components.set('path', `${__dirname}/components`); // location of the component directory.
 
 
-const logger = fractal.cli.console;
 
 gulp.task('start', function(){
     const server = fractal.web.server({
@@ -20,6 +24,8 @@ gulp.task('start', function(){
     });
 });
 
+
+
 gulp.task('build', function(){
     const builder = fractal.web.builder();
     builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
@@ -28,3 +34,31 @@ gulp.task('build', function(){
         logger.success('Fractal build completed!');
     });
 });
+
+
+gulp.task("images", function() {
+    return gulp
+      .src(["assets/images/**"], {
+        base: "assets/"
+      })
+      .pipe(gulp.dest("./public/"));
+  });
+
+gulp.task("scss", function(done) {
+gulp.src(["scss/view.scss"])
+    .pipe(sassGlob())
+    .pipe(sass().on("error", sass.logError))
+    .pipe(rename("view.css"))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest("./public/css"));
+    done();
+});
+
+gulp.task('watch', function(){
+    gulp.watch("scss/**/*.scss", gulp.series("scss")); 
+    gulp.watch("assets/images/**", gulp.series("images")); 
+  })
+  
+
+gulp.task("build", gulp.parallel("images", "scss", "start"));
+gulp.task("watch", gulp.parallel("watch", "start"));

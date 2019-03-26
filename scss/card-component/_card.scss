@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.card {
+  position: relative;
+  border-radius: 8px; 
+  background-size: cover;
+}
+
+.card__subtitle {	
+  color: #FFFFFF;	
+  font-family: "Open Sans";	
+  font-size: 14px;	
+  letter-spacing: 2.33px;	
+  line-height: 19px;	
+  top: 30%;
+  left: 50%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+}
+
+.card__title {
+    color: #FFFFFF;	
+    font-family: "Open Sans";	
+    font-size: 28px;	
+    font-weight: bold;	
+    line-height: 32px;	
+    top: 45%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card__image {
+  left: 50%;
+  top: 45%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 46px;	
+  width: 223px;
+  filter: invert(100%) sepia(9%) saturate(7500%) hue-rotate(169deg) brightness(118%) contrast(112%);
+  @media only screen and (min-width: 375px) {
+    height: 31px;	
+    width: 150px;
+  }
+}
+
+.card__description {
+  left: 50%;
+  top: 55%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;	
+  font-family: "Open Sans";	
+  text-align: center;
+  @media only screen and (min-width: 375px) {
+    height: 60px;	
+    width: 250px;
+    font-size: 14px;	
+    line-height: 20px;
+  }
+  @media only screen and (min-width: 940px){
+    height: 52px;	
+    width: 519px;
+    font-size: 16px;	
+    line-height: 26px;
+  }
+}
+
+.card--overlay::before {
+  position: relative;
+  background-color: rgba(85,85,85,0.4);
+}
+
+
