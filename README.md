@@ -2,7 +2,12 @@
 
 This project was build using Fractal and it requires Node.js v4.4.7 or superior to run. 
 
-##Installing 
+# Requirements
+
+  - NPM: https://www.npmjs.com/
+  - Gulp: https://gulpjs.com/
+
+# Installing 
 
 Clone this repository and run the following command: 
 
