@@ -8,7 +8,6 @@ const cleanCSS = require("gulp-clean-css");
 
 
 fractal.set('project.title', 'Grid Card Component'); // title for the project
-fractal.web.set('builder.dest', 'build'); // destination for the static export
 fractal.docs.set('path', `${__dirname}/docs`); // location of the documentation directory.
 fractal.components.set('path', `${__dirname}/components`); // location of the component directory.
 
@@ -41,7 +40,6 @@ gulp.task("images", function() {
       .src(["assets/images/**"], {
         base: "assets/"
       })
-      .pipe(gulp.dest("./public/"));
   });
 
 gulp.task("scss", function(done) {
@@ -50,7 +48,6 @@ gulp.src(["scss/view.scss"])
     .pipe(sass().on("error", sass.logError))
     .pipe(rename("view.css"))
     .pipe(cleanCSS())
-    .pipe(gulp.dest("./public/css"));
     done();
 });
 
